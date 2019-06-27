@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Load test!</h1>
+    @if (ViewData["Message"] != null)
+    {
+        <p id="output">@ViewData["Message"]</p>
+    }
+    else
+    {
+        <form action="/submit" method="post">
+            <input type="text" name="input" id="input" placeholder="Enter text" />
+            <button id="submit" type="submit">Submit!</button>
+        </form>
+    }
+</div>

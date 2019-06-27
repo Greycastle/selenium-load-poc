@@ -1,0 +1,6 @@
+# IDEs
+.idea
+
+# build files
+bin/
+obj/
